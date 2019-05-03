@@ -1,0 +1,158 @@
+{
+  "_links": {
+    "self": {
+      "href": "/metrics"
+    }
+  },
+  "goroutines": {
+    "value": 20
+  },
+  "history.elder_ledger": {
+    "value": 2
+  },
+  "history.latest_ledger": {
+    "value": 142
+  },
+  "history.open_connections": {
+    "value": 2
+  },
+  "ingester.clear_ledger": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "75%": 0,
+    "95%": 0,
+    "99%": 0,
+    "99.9%": 0,
+    "count": 0,
+    "max": 0,
+    "mean": 0,
+    "mean.rate": 0,
+    "median": 0,
+    "min": 0,
+    "stddev": 0
+  },
+  "ingester.ingest_ledger": {
+    "15m.rate": 0.2,
+    "1m.rate": 0.2,
+    "5m.rate": 0.2,
+    "75%": 21240.5,
+    "95%": 45217.100000000006,
+    "99%": 310857.02000000095,
+    "99.9%": 341924,
+    "count": 141,
+    "max": 341924,
+    "mean": 28147.617021276597,
+    "mean.rate": 0.20001124892457084,
+    "median": 17795,
+    "min": 13229,
+    "stddev": 45643.15964483578
+  },
+  "logging.debug": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "count": 0,
+    "mean.rate": 0
+  },
+  "logging.error": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "count": 0,
+    "mean.rate": 0
+  },
+  "logging.info": {
+    "15m.rate": 0.6903867380482083,
+    "1m.rate": 0.5858400024089381,
+    "5m.rate": 0.6092786633488753,
+    "count": 428,
+    "mean.rate": 0.6053838035464306
+  },
+  "logging.panic": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "count": 0,
+    "mean.rate": 0
+  },
+  "logging.warning": {
+    "15m.rate": 0.2756554944215552,
+    "1m.rate": 0.000005144963461603412,
+    "5m.rate": 0.05818318071864305,
+    "count": 3,
+    "mean.rate": 0.004255324774644528
+  },
+  "requests.failed": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "count": 0,
+    "mean.rate": 0
+  },
+  "requests.succeeded": {
+    "15m.rate": 0.03927840073614129,
+    "1m.rate": 0.0675358143145022,
+    "5m.rate": 0.06372394599886999,
+    "count": 52,
+    "mean.rate": 0.07376301530519125
+  },
+  "requests.total": {
+    "15m.rate": 0.03927840073614129,
+    "1m.rate": 0.0675358143145022,
+    "5m.rate": 0.06372394599886999,
+    "75%": 15012825833,
+    "95%": 15015201870.75,
+    "99%": 25022980069,
+    "99.9%": 25022980069,
+    "count": 52,
+    "max": 25022980069,
+    "mean": 12267120510.096153,
+    "mean.rate": 0.07376301528991464,
+    "median": 15008134669.5,
+    "min": 1513546,
+    "stddev": 5995354637.158295
+  },
+  "stellar_core.latest_ledger": {
+    "value": 142
+  },
+  "stellar_core.open_connections": {
+    "value": 2
+  },
+  "txsub.buffered": {
+    "value": 0
+  },
+  "txsub.failed": {
+    "15m.rate": 0,
+    "1m.rate": 0,
+    "5m.rate": 0,
+    "count": 0,
+    "mean.rate": 0
+  },
+  "txsub.open": {
+    "value": 0
+  },
+  "txsub.succeeded": {
+    "15m.rate": 0.0015915030602065587,
+    "1m.rate": 8.537225459631741e-7,
+    "5m.rate": 0.0010918320623437112,
+    "count": 3,
+    "mean.rate": 0.0042555601617408545
+  },
+  "txsub.total": {
+    "15m.rate": 0.0015915030602065587,
+    "1m.rate": 8.537225459631741e-7,
+    "5m.rate": 0.0010918320623437112,
+    "75%": 1613308,
+    "95%": 1613308,
+    "99%": 1613308,
+    "99.9%": 1613308,
+    "count": 3,
+    "max": 1613308,
+    "mean": 1424869.3333333333,
+    "mean.rate": 0.004255560163503542,
+    "median": 1390837,
+    "min": 1270463,
+    "stddev": 142019.53689623912
+  }
+}

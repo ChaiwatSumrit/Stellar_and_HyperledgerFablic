@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "02d49448-35f4-4347-9d04-6e98fe39bd9f",
+		"name": "Stellar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startingBalance\" :\"10000\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/create/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"create",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check balances",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"destination\":\"GCJVOPCA5E24PLHI6ZGOBCTASUTIHSFEYG7IVCWTEDDISEOZK2GF7GYM\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/check/balances",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"check",
+						"balances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"buyer\":\"SACEOSXRAVE2CKAVE2LNIYME4J62CA6OVOBVF5FKDSPQJDSMNUD2ZNDQ\",\n\t\"seller\":\"GAHLSDWINX2U4YN6SOZLDBXN2PTV6FGKM62UCN6P7NRIS2GDEHU63L3U\",\n\t\"amount\":\"1000\",\n\t\"offer_id\":\"offer01|marble8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8112/api/stellar/create/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8112",
+					"path": [
+						"api",
+						"stellar",
+						"create",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

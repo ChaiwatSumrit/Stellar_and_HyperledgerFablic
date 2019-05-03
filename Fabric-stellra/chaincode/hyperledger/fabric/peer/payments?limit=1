@@ -1,0 +1,48 @@
+{
+  "_links": {
+    "self": {
+      "href": "http://stellar:8000/transactions/25fda6482bc5144f24d1d6077da11d89d8f393733304b176b6153991c5a09c6b/payments?cursor=\u0026limit=1\u0026order=asc"
+    },
+    "next": {
+      "href": "http://stellar:8000/transactions/25fda6482bc5144f24d1d6077da11d89d8f393733304b176b6153991c5a09c6b/payments?cursor=90194317313\u0026limit=1\u0026order=asc"
+    },
+    "prev": {
+      "href": "http://stellar:8000/transactions/25fda6482bc5144f24d1d6077da11d89d8f393733304b176b6153991c5a09c6b/payments?cursor=90194317313\u0026limit=1\u0026order=desc"
+    }
+  },
+  "_embedded": {
+    "records": [
+      {
+        "_links": {
+          "self": {
+            "href": "http://stellar:8000/operations/90194317313"
+          },
+          "transaction": {
+            "href": "http://stellar:8000/transactions/25fda6482bc5144f24d1d6077da11d89d8f393733304b176b6153991c5a09c6b"
+          },
+          "effects": {
+            "href": "http://stellar:8000/operations/90194317313/effects"
+          },
+          "succeeds": {
+            "href": "http://stellar:8000/effects?order=desc\u0026cursor=90194317313"
+          },
+          "precedes": {
+            "href": "http://stellar:8000/effects?order=asc\u0026cursor=90194317313"
+          }
+        },
+        "id": "90194317313",
+        "paging_token": "90194317313",
+        "transaction_successful": true,
+        "source_account": "GCDO7UNS34KTKKNR6FLJW3PVHRGCYER4J7KLV3PJZGADDG2AAURAK5VU",
+        "type": "payment",
+        "type_i": 1,
+        "created_at": "2019-04-03T17:44:20Z",
+        "transaction_hash": "25fda6482bc5144f24d1d6077da11d89d8f393733304b176b6153991c5a09c6b",
+        "asset_type": "native",
+        "from": "GCDO7UNS34KTKKNR6FLJW3PVHRGCYER4J7KLV3PJZGADDG2AAURAK5VU",
+        "to": "GBHUHK4MHJ2VJGB2OKMKTMP56TAU65A3ZQZGMWQ7LCFBRFJYQRSSSSDR",
+        "amount": "30000.0000000"
+      }
+    ]
+  }
+}

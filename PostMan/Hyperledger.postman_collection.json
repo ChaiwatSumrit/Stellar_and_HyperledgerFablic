@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "c474ab56-38ff-431e-aaac-35712ec3ca85",
+		"name": "Hyperledger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create Marble",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"marble_id\":\"Marble1\",\n\t\"color\":\"red\",\n\t\"size\":\"35\",\n\t\"owner\":\"BEST\"\n\t\n}"
+				},
+				"url": {
+					"raw": "localhost:8112/api/blockchain/create/marble",
+					"host": [
+						"localhost"
+					],
+					"port": "8112",
+					"path": [
+						"api",
+						"blockchain",
+						"create",
+						"marble"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Marble",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8112/api/blockchain/getmarble/marble3",
+					"host": [
+						"localhost"
+					],
+					"port": "8112",
+					"path": [
+						"api",
+						"blockchain",
+						"getmarble",
+						"marble3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer marble",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"stellar_tx_id\":\"371925d8cdf5b47400a57aef66c67f17786eda6b3e98f0d7a63c7fe05d1798c4\",\n\t\"marble_id\":\"marble8\",\n\t\"public_key_receive\":\"GCRFYFKZ2DWDI2PNBJB6KZZ6TIVNOVQCHDNWGXTQVJ4XCZ44N7IVHRI3\",\n\t\"amount\":\"1000\",\n\t\"offer_id\": \"offer01|marble8\",\n\t\"owner_name\": \"ICEEEZA\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8112/api/blockchain/transfer/marble",
+					"host": [
+						"localhost"
+					],
+					"port": "8112",
+					"path": [
+						"api",
+						"blockchain",
+						"transfer",
+						"marble"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e83f0f4d-26a9-425f-8687-3546fc614d1e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e8f83ac4-79bf-40c4-b9ec-78b4a1c9cac7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
