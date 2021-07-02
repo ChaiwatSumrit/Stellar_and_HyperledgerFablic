@@ -30,7 +30,7 @@
     "request": "^2.78.0",
     "sql-template-strings": "^2.2.2",
     "sqlite": "^3.0.0",
-    "stellar-sdk": "^0.15.0",
+    "stellar-sdk": "^8.2.3",
     "swagger-ui-express": "^3.0.9",
     "winston": "^2.3.1"
   },
